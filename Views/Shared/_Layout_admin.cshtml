@@ -62,22 +62,12 @@
 <div class="extra">
     	<!--==============================header=================================-->
         <header>
-            <div class="sticky-header"><table><tr><td style="width:80%;"></td><td><h6>Hi User! <a href="~/Account/Logout" style="padding-left:50px;color:black;">Logout</a> </h6></td></tr></table></div>
+            <div class="sticky-header"><table><tr><td style="width:80%;"></td><td><h6>Hi Admin! <a href="~/Account/Logout" style="padding-left:50px;color:black;">Logout</a> </h6></td></tr></table></div>
         	<div class="row-top" style="margin-top:30px;">
             	<div class="main">
                     <div id="menuSection">asda</div>
                 	<div class="wrapper">
                     	<h1><a href="index.html">Consulting</a></h1>
-                        @using (Html.BeginForm("SearchedPosts","Post",FormMethod.Post,new { id="search-form"}))
-                        {
-                        <fieldset>	
-                            <div class="search-field">
-                                <input name="search" type="text" id="search" value="Search..." onBlur="if(this.value=='') this.value='Search...'" onFocus="if(this.value =='Search...' ) this.value=''" />
-                                <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"></a>	
-                            </div>						
-                        </fieldset>
-                    
-                        }
                     </div>
                 </div>
             </div>

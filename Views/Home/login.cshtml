@@ -16,7 +16,7 @@
                 @using (Html.BeginForm( "Login_user", "Account", FormMethod.Post, new { id="contact-form2" })){
                     <fieldset>
 				        <label><span class="text-form">Userame:</span>@Html.TextBoxFor( model => model.username )</label>                              
-				        <label><span class="text-form">Password:</span>@Html.TextBoxFor( model=>model.password )</label>						  
+				        <label><span class="text-form">Password:</span>@Html.PasswordFor( model=>model.password )</label>						  
 				        <div class="buttons2">
 					        <a href="#" onClick="document.getElementById('contact-form2').submit()">Login</a>
 				        </div> 
